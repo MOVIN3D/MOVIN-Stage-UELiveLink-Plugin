@@ -1,0 +1,5 @@
+# Build outputs. The prebuilt zips in Prebuilt/ are the shipped artefacts; everything else is regenerated.
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/

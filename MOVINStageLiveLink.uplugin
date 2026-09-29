@@ -1,0 +1,38 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.1.0",
+	"FriendlyName": "MOVIN Stage LiveLink",
+	"Description": "MOVIN Stage: receives OSC motion and MOVIN Stage point clouds over a single UDP port, publishes LiveLink animation subjects, and renders the point cloud through Niagara. Distinct from the MOVIN LiveLink (Tracin) plugin - the two can run side by side on different UDP ports.",
+	"Category": "LiveLink",
+	"CreatedBy": "MOVIN",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "MOVINStageLiveLink",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "MOVINStagePointCloudRender",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "LiveLink",
+			"Enabled": true
+		},
+		{
+			"Name": "Niagara",
+			"Enabled": true
+		},
+		{
+			"Name": "LidarPointCloud",
+			"Enabled": true
+		}
+	]
+}
